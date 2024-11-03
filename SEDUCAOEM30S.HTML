@@ -1,0 +1,481 @@
+<html><head><base href="www.comoconquistaremela.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Seduzir em 30 Segundos | O Guia Definitivo</title>
+        <link rel="icon" href="SEDUÇÃO PARA HOTMART.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: white;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), 
+                        url('https://images.unsplash.com/photo-silhouette-couple-sunset') center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .urgency-badge {
+            background: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            animation: shake 0.8s infinite;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: #ff3366;
+            text-transform: uppercase;
+        }
+
+        .hero p.subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 30px auto;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(255, 51, 102, 0.3);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 51, 102, 0.1);
+            pointer-events: none;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: #ff3366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .play-button:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+            background: #ff1a4d;
+        }
+
+       .play-button i {
+            color: white;
+            font-size: 2rem;
+            margin-left: 5px;
+        }
+
+        .cta-button {
+            background: #ff3366;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: pulse 2s infinite;
+        }
+        .cta-button:hover{
+            background-color: #00ff00;
+            border-radius: 100px;
+            height: 80px;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff3366;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .benefits-list {
+            margin: 30px 0;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .benefit-item i {
+            color: #00ff00;
+            margin-right: 10px;
+        }
+
+        .scarcity-alert {
+            background: #ff3366;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        .features {
+            padding: 100px 20px;
+            background: #111;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: #ff3366;
+            margin-bottom: 20px;
+        }
+
+        .timer-container {
+            background: #ff3366;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .testimonials {
+            padding: 100px 20px;
+            background: #0a0a0a;
+        }
+
+        .testimonial-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .guarantee {
+            text-align: center;
+            padding: 50px 20px;
+            background: #111;
+        }
+
+        .guarantee-section {
+            padding: 50px 20px;
+            background: #111;
+        }
+
+        .guarantee-box {
+            text-align: center;
+        }
+
+        .price {
+            font-size: 4rem;
+            color: #ff3366;
+            margin: 20px 0;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #666;
+            font-size: 2rem;
+        }
+
+        .closing-offer {
+            padding: 50px 20px;
+            background: #0a0a0a;
+            text-align: center;
+        }
+
+        .mega-cta-button {
+            background: linear-gradient(45deg, #ff3366, #ff0000);
+            padding: 25px 50px;
+            font-size: 2rem;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cta-subtitle {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(5px); }
+            50% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="urgency-badge">
+            ATENÇÃO: Apenas 7 vagas restantes com desconto!
+        </div>
+        <h1>Domine a Arte da Sedução em 30 Segundos</h1>
+        <p class="subtitle">Método Científico Comprovado por Especialistas em Psicologia do Comportamento</p>
+        
+        <div class="video-container">
+            <div class="video-wrapper">
+                <!--este é uma das melhores maneiras para importar videos do youtube>--->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4bR49EWiF9Q?si=iFad4aiWnjSHj9Nu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-overlay"></div>
+                <div class="play-button">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="timer-container">
+            Oferta especial termina em: <span id="timer">23:59:59</span>
+        </div>
+        <a href="https://pay.hotmart.com/T96382828S?checkoutMode=10" class="cta-button">QUERO CONQUISTAR AGORA! ➜</a>
+
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Técnicas secretas de linguagem corporal</span>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Palavras-chave que despertam atração instantânea</span>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Psicologia avançada da atração</span>
+            </div>
+        </div>
+
+        <div class="scarcity-alert">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>ATENÇÃO: Oferta válida apenas nas próximas 24 horas!</span>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Resultados Imediatos</h3>
+                <p>Aprenda técnicas comprovadas que funcionam nos primeiros 30 segundos de interação</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3>Psicologia Avançada</h3>
+                <p>Entenda a mente feminina ou masculina e use isso a seu favor</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Taxa de Sucesso de 97%</h3>
+                <p>Testado e aprovado por mais de 10.000 Alunos</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <h2>Resultados Reais de Nossos Alunos</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img alt="foto de perfil de João Silva, homem sorrindo, estilo foto profissional" src="imagem vt.jpeg" width="60" height="60">
+                    <div class="rating">
+                        <i class="fas fa-star" style="color:yellow"></i>
+                        <i class="fas fa-star" style="color:yellow"></i>
+                        <i class="fas fa-star" style="color:yellow;"></i>
+                        <i class="fas fa-star" style="color:yellow"></i>
+                        <i class="fas fa-star" style="color:yellow"></i>
+                    </div>
+                </div>
+                <p>"Depois de aplicar as técnicas, consegui um relacionamento em apenas 2 semanas!"</p>
+                <span class="name">- João Silva</span>
+            </div>
+            <!-- more testimonials -->
+        </div>
+    </section>
+
+    <section class="guarantee-section">
+        <div class="guarantee-box">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Garantia Tripla de Satisfação</h3>
+            <ul>
+                <li>7 dias para testar</li>
+                <li>Devolução integral do valor</li>
+                <li>Suporte personalizado</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="closing-offer">
+        <div class="price-box">
+            <div class="original-price">De <span>R$ 228,02</span></div>
+            <div class="current-price">
+                <span class="price-label">Apenas</span>
+                <span class="price-value">R$ 88,02</span>
+            </div>
+            <div class="installments">ou 12x de R$ 7,335</div>
+        </div>
+        
+        <div class="bonus-section">
+            <h3>BÔNUS EXCLUSIVOS (Válidos apenas HOJE)</h3>
+            <div class="bonus-item">
+                <i class="fas fa-gift"></i>
+                <div class="bonus-content">
+                    <h4>Bônus 1 E-book: Guia de Comunicação Não-Verbal</h4>
+                    <span class="bonus-value">Valor: R$ 17,10 </span>
+                </div>
+            </div>
+            <div class="bonus-item">
+                <i class="fas fa-gift"></i>
+                <div class="bonus-content">
+                    <h4>Bônus 2 E-book: 30 Frases Irresistíveis</h4>
+                    <span class="bonus-value">Valor: R$ 28,50</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://pay.hotmart.com/T96382828S?checkoutMode=10" class="mega-cta-button">
+            QUERO SER UM ESPECIALISTA DA CONQUISTA AGORA!
+            <span class="cta-subtitle">Clique aqui para garantir seu acesso VIP</span>
+        </a>
+    </section>
+
+    <script>
+        // Timer countdown
+        function updateTimer() {
+            const timer = document.getElementById('timer');
+            let time = timer.innerHTML.split(':');
+            let hours = parseInt(time[0]);
+            let minutes = parseInt(time[1]);
+            let seconds = parseInt(time[2]);
+
+            seconds--;
+
+            if (seconds < 0) {
+                seconds = 59;
+                minutes--;
+                if (minutes < 0) {
+                    minutes = 59;
+                    hours--;
+                    if (hours < 0) {
+                        hours = 23;
+                    }
+                }
+            }
+
+            timer.innerHTML = 
+                (hours < 10 ? '0' + hours : hours) + ':' +
+                (minutes < 10 ? '0' + minutes : minutes) + ':' +
+                (seconds < 10 ? '0' + seconds : seconds);
+        }
+
+        setInterval(updateTimer, 1000);
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Video play button functionality
+        document.querySelector('.play-button').addEventListener('click', function() {
+            const iframe = document.querySelector('iframe');
+            const url = iframe.src;
+            iframe.src = url + '?autoplay=1';
+            this.style.display = 'none';
+        });
+
+        // Add countdown timer for bonus offer
+        const bonusTimer = setInterval(() => {
+            const now = new Date().getTime();
+            const target = new Date(now + 24*60*60*1000).getTime();
+            const distance = target - now;
+            
+            const hours = Math.floor(distance / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('bonus-timer').innerHTML = 
+                `${hours}h ${minutes}m ${seconds}s`;
+            
+            if (distance < 0) {
+                clearInterval(bonusTimer);
+                document.getElementById('bonus-timer').innerHTML = "EXPIRADO";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
